@@ -82,6 +82,8 @@ public class VarastoTest {
     @Test
     public void negatiivinenLisaysEiVaikutaSaldoon() {
         varasto.lisaaVarastoon(-2);
+
+        //saldon ei pitäisi kasvaa
         assertEquals(0, varasto.getSaldo(), vertailuTarkkuus);
     }
 
@@ -119,6 +121,7 @@ public class VarastoTest {
 
         varasto.otaVarastosta(-2);
 
+        //saldon ei pitäisi vähentyä
         assertEquals(8, varasto.getSaldo(), vertailuTarkkuus);
     }
 
