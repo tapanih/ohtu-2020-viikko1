@@ -22,8 +22,7 @@ public class Varasto {
             this.saldo = 0.0; // ei mahdu enempää
         } else {
             this.tilavuus = tilavuus;
-            if (alkuSaldo > this.tilavuus)
-            {
+            if (alkuSaldo > this.tilavuus) {
                 this.saldo = this.tilavuus;
             } else {
                 this.saldo = alkuSaldo;
